@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Merriweather:wght@300&family=Orbitron:wght@600&family=Pixelify+Sans&family=Playfair+Display:ital,wght@0,400;1,500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    background: url(img/dada.jpg)no-repeat center center fixed;
+    background-size: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 100px;
+}
+
+.container__header {
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    padding: 40px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 220px;
+}
+
+.menu nav ul {
+    display: flex;
+}
+
+.menu nav ul li {
+    list-style: none;
+    padding: 0px 20px;
+}
+
+.menu nav ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: opacity 300ms;
+}
+
+.menu nav ul li a:hover {
+    opacity: 0.6;
+}
+
+.btn__header-register,
+.btn__register-cover .btn__header-register,
+.btn__register-cover {
+    padding: 14px 50px;
+    border-radius: 10px;
+    background: #b163ae;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background, color, 300ms;
+    text-decoration-line: none;
+}
+
+
+.btn__header-register:hover,
+.btn__register-cover:hover {
+    background: #69F1A1;
+    color: #000;
+}
+
+#icon_menu {
+    display: none;
+}
+
+/*PORTADA - COVER*/
+
+main {
+    max-width: 1200px;
+    height: calc(100vh + 3200px);
+    padding: 40px;
+    margin: auto;
+    flex-grow: 1;
+
+}
+
+.cover {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.text__information-cover {
+    width: 50%;
+}
+
+.text__information-cover h1 {
+    font-size: 50px;
+}
+
+.text__information-cover p {
+    font-size: 18px;
+    margin-top: 40px;
+}
+h3{
+    text-decoration: overline underline;
+    margin-top: 100px;
+    padding: 50px;
+    font-size: 50px;
+    color: goldenrod;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.buttons__cover {
+    display: flex;
+    margin-top: 40px;
+}
+
+.btn__readMore-cover {
+    padding: 14px 40px;
+    border: none;
+    color: rgb(163, 155, 155);
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 300ms;
+}
+
+.btn__readMore-cover:hover {
+    background: #E8E8E8;
+}
+
+.media__cover {
+    width: 50%;
+    border-radius: 100%;
+}
+
+.media__cover video {
+    width: 100%;
+    margin-top: -40px;
+    border-radius: 100%;
+}
+
+/*BANNER*/
+
+.container__banner {
+    margin-top: 80px;
+}
+
+.banner {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    background: #121214;
+    position: relative;
+    border-radius: 13px;
+}
+
+.banner__icon-heart {
+    width: 35%;
+    height: 100%;
+}
+
+.banner__icon-heart2 {
+    width: 5%;
+    height: 100%;
+}
+
+#icon_heart4 {
+    width: 310px;
+    margin-top: -30px;
+    margin-left: 10px;
+    position: relative;
+    filter: drop-shadow(-40px 0px 50px rgb(252, 252, 252, 0.5));
+}
+
+#icon_heart3 {
+    width: 320px;
+    margin-top: -30px;
+    margin-left: 110px;
+    position: relative;
+    filter: drop-shadow(-40px 0px 50px rgb(252, 252, 252, 0.5));
+}
+
+#icon_heart2 {
+    width: 390px;
+    margin-top: -10px;
+    margin-left: 50px;
+    position: relative;
+    filter: drop-shadow(-40px 0px 30px rgb(252, 252, 252, 0.5));
+}
+
+#icon_heart {
+    width: 390px;
+    margin-top: -10px;
+    position: relative;
+    filter: drop-shadow(-40px 0px 30px rgb(252, 252, 252, 0.5));
+}
+
+.banner__text {
+    width: 60%;
+    position: relative;
+    padding: 50px;
+}
+
+.banner__text h2 {
+    color: #ffee00;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+
+    .container__header,
+    main {
+        padding: 20px;
+    }
+
+    #icon_menu {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    .header__register {
+        display: none;
+    }
+
+    .menu {
+        height: 0px;
+        position: absolute;
+        right: 20px;
+        top: 70px;
+        overflow: hidden;
+        z-index: 10;
+        box-shadow: 0px 0px 30px -20px rgba(0, 0, 0, 0.5);
+        transition: all 300ms;
+    }
+
+    .menu nav ul {
+        padding: 20px 0px;
+        flex-direction: column;
+        background: #fff;
+    }
+
+    .menu nav ul li {
+        padding: 10px 40px;
+    }
+
+    .mostrar_menu {
+        /*CLASE MANIPULADA POR JS*/
+        height: 235px;
+    }
+
+    .text__information-cover h1 {
+        font-size: 40px;
+    }
+
+    .text__information-cover p {
+        font-size: 50px;
+    }
+
+    .banner__text h2 {
+        font-size: 22px;
+    }
+
+    #icon_heart {
+        left: -60px;
+    }
+
+    .banner__icon-fire {
+        right: -20px;
+    }
+}
+
+@media (max-width: 920px) {
+    .text__information-cover {
+        width: 100%;
+    }
+
+    .media__cover {
+        display: none;
+    }
+
+    .banner {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    #icon_fire {
+        display: none;
+    }
+
+    #icon_heart {
+        left: 0;
+    }
+
+    .banner__text {
+        width: 100%;
+        margin-top: -100px;
+    }
+}
+
+.btn__readMore-cover {
+    padding: 14px 40px;
+    border: none;
+    color: rgb(163, 162, 155);
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 300ms;
+    border-radius: 13px;
+}
+
+.text__information-cover h1 {
+    font-size: 50px;
+    color: goldenrod;
+    font-family: 'Playfair Display', serif;
+}
+
+.text__information-cover p {
+    font-size: 18px;
+    margin-top: 50px;
+    color: gold;
+    font-family: 'Merriweather', serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #000000;
+    padding: 80px 0;
+    margin-top: 110px;
+}
+
+.footer-col {
+    width: 29%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #fbff02;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fffb00;
+    text-decoration: none;
+    font-weight: 300;
+    color: #fffb00;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #fbff00;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    /* Adicione um espaçamento à direita para separar a imagem do ícone */
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.social-links img {
+    vertical-align: middle;
+    /* Alinha verticalmente a imagem ao meio do ícone */
+    height: 40px;
+    /* Define a altura da imagem para corresponder ao ícone */
+    width: 40px;
+    /* Define a largura da imagem para corresponder ao ícone */
+}
+
+
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+
+
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
